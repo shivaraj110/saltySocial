@@ -106,6 +106,32 @@ export default function () {
       </div>
       <div className="">
         <div className="text-gray-400 pt-10 font-semibold">PAGES YOU LIKE</div>
+        <section>
+          <div className="flex pt-5">
+            <div className="bg-slate-500 h-8 w-8 rounded-xl"></div>
+            <div className="font-semibold text-gray-600 pl-3 translate-y-1 ">
+              Fashion Design
+            </div>
+          </div>{" "}
+          <div className="flex pt-5">
+            <div className="bg-slate-500 h-8 w-8 rounded-xl"></div>
+            <div className="font-semibold text-gray-600 pl-3 translate-y-1 ">
+              Graphic Design
+            </div>
+          </div>{" "}
+          <div className="flex pt-5">
+            <div className="bg-slate-500 h-8 w-8 rounded-xl"></div>
+            <div className="font-semibold text-gray-600 pl-3 translate-y-1 ">
+              UI/UX Community
+            </div>
+          </div>{" "}
+          <div className="flex pt-5">
+            <div className="bg-slate-500 h-8 w-8 rounded-xl"></div>
+            <div className="font-semibold text-gray-600 pl-3 translate-y-1 ">
+              Web Designer
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
