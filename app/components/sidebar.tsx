@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <div className="pl-5 pt-10 text-sm">
+    <div className="pl-5 mr-10     pt-10 text-sm">
       <div className="text-gray-500 flex cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
