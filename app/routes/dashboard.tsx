@@ -14,33 +14,33 @@ const posts: postProps[] = [
     username: "Alex madrchod",
     likes: 69,
     comments: 100,
-    tags: ["asda,asd"],
+    tags: ["asdaasd", "adsads"],
     caption:
-      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption ",
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
   },
   {
     username: "Edward Newgate",
     likes: 69,
     comments: 100,
-    tags: ["asda,asd"],
+    tags: ["asdaasd", "adsads"],
     caption:
-      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption ",
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
   },
   {
     username: "Edward Newgate",
     likes: 69,
     comments: 100,
-    tags: ["asda,asd"],
+    tags: ["asdaasd", "adsads"],
     caption:
-      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption ",
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
   },
   {
     username: "Edward Newgate",
     likes: 69,
     comments: 100,
-    tags: ["asda,asd"],
+    tags: ["asdaasd", "adsads"],
     caption:
-      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption ",
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
   },
 ];
 
