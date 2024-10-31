@@ -8,13 +8,21 @@ interface postProps {
 export default function (props: postProps) {
   return (
     <div className="h-[375px] bg-white min-w-[500px] max-w-[650px] px-3 py-3 shadow-lg rounded-3xl">
-      <div className="h-[200px] rounded-2xl bg-slate-400 text-center flex flex-col justify-center">
-        {"image here"}
+      <div className="flex flex-col justify-center">
+        <img
+          className="h-[200px] rounded-2xl bg-slate-400 text-center"
+          src="https://utfs.io/f/FY8OMBAlLeCoPhnRPVvCNB4x5p9EhcSywkz2VAujIgGXZK1F"
+          alt="post image"
+        />
       </div>
       <div className="mt-2 flex flex-row mx-1 justify-between">
         <div className="flex flex-row">
-          <div className="bg-slate-500 w-10 mt-2 h-10 rounded-full"></div>
-          <div className="ml-5 mt-4">{props.username}</div>
+          <img
+            src="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+            alt="pfp"
+            className="w-10 mt-2 h-10 rounded-full"
+          />
+          <div className="ml-3 mt-4">{props.username}</div>
         </div>
         <div className="flex flex-row justify-between mx-5">
           <div className="flex flex-row mt-4">
@@ -25,7 +33,7 @@ export default function (props: postProps) {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 fill-slate-300 border-none">
+                className="size-6  border-none">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -43,7 +51,7 @@ export default function (props: postProps) {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 fill-slate-300">
+                className="size-6 ">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
