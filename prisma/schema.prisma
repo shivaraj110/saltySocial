@@ -39,6 +39,7 @@ model Post {
   user      User      @relation(fields: [userId], references: [id])
   likes     Like[]
   comments  Comment[]
+  imageUrl  String
 }
 
 model Like {

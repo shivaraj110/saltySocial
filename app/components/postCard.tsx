@@ -7,12 +7,12 @@ interface postProps {
 }
 export default function (props: postProps) {
   return (
-    <div className="h-[400px] p-2 bg-white w-[600px] col-span-3  rounded-md">
-      <div className="h-[215px] rounded-md bg-slate-400 text-center flex flex-col justify-center">
+    <div className="h-[375px] bg-white min-w-[500px] max-w-[650px] px-3 py-3 shadow-lg rounded-3xl">
+      <div className="h-[200px] rounded-2xl bg-slate-400 text-center flex flex-col justify-center">
         {"image here"}
       </div>
       <div className="mt-2 flex flex-row mx-1 justify-between">
-        <div className="flex flex-row justify-around">
+        <div className="flex flex-row">
           <div className="bg-slate-500 w-10 mt-2 h-10 rounded-full"></div>
           <div className="ml-5 mt-4">{props.username}</div>
         </div>
@@ -55,12 +55,12 @@ export default function (props: postProps) {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-2 text-gray-600 mt-5">
+      <div className="flex flex-row gap-2 text-gray-600 px-3 mt-5">
         {props.tags.map((t) => (
           <div>{"#" + t}</div>
         ))}
       </div>
-      <div className="text-sm">{props.caption}</div>
+      <div className="text-sm px-3">{props.caption.slice(0, 150) + "..."}</div>
     </div>
   );
 }
