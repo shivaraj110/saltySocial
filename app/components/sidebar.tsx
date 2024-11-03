@@ -1,9 +1,10 @@
-import { useParams, useSearchParams } from "@remix-run/react";
+import { useSearchParams } from "@remix-run/react";
 import { useState } from "react";
+import { redirect } from "react-router";
 
 export default function () {
-  const [params,setParams] = useSearchParams()
-  const currRoute = params.get("route")
+  const [searchparams,setsearchParams] = useSearchParams()
+  const currRoute = searchparams.get("route")
   
   const [fold,setFold] = useState(true)
   return (
@@ -28,7 +29,15 @@ export default function () {
 </svg>
 
       </div>
-  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 `} >
+  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 `}
+      onClick={() => {
+        setFold(true)
+        const params = new URLSearchParams();
+        params.set("route", "feed");
+        setsearchParams(params, {
+          preventScrollReset: true,
+        });
+      }} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -45,10 +54,19 @@ export default function () {
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Feed</div>
       </div>{" "}
     
-      <div className=" hover:bg-slate-100 ">
+      <div className= {`hover:bg-slate-100 ${currRoute == "friends" ? "bg-slate-200" : null}`} >
 
       </div>
-      <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+      <div 
+     onClick={() => {
+      setFold(true)
+      const params = new URLSearchParams();
+      params.set("route", "friends");
+      setsearchParams(params, {
+        preventScrollReset: true,
+      });
+    }}
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "friends" ? "bg-slate-200" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -68,7 +86,17 @@ export default function () {
       <div className=" hover:bg-slate-100 ">
 
       </div>
-      <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+      <div 
+      onClick={() => {
+        setFold(true)
+        const params = new URLSearchParams();
+        params.set("route", "events");
+        setsearchParams(params, {
+          preventScrollReset: true,
+        });
+      }}
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "events" ? "bg-slate-200" : null } `} 
+      >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -83,11 +111,17 @@ export default function () {
           />
         </svg>
 
-        <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Event</div>      </div>{" "}
-        <div className=" hover:bg-slate-100 ">
-
-        </div>
-        <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+        <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Events</div>      </div>{" "}
+        <div 
+          onClick={() => {
+            setFold(true)
+            const params = new URLSearchParams();
+            params.set("route", "videos");
+            setsearchParams(params, {
+              preventScrollReset: true,
+            });
+          }}
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "videos" ? "bg-slate-200" : null } `} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -107,7 +141,16 @@ export default function () {
       <div className=" hover:bg-slate-100 ">
 
       </div>
-      <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+      <div 
+         onClick={() => {
+          setFold(true)
+          const params = new URLSearchParams();
+          params.set("route", "photos");
+          setsearchParams(params, {
+            preventScrollReset: true,
+          });
+        }}
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "photos" ? "bg-slate-200" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -126,7 +169,16 @@ export default function () {
         <div className=" hover:bg-slate-100 ">
 
         </div>
-        <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+        <div 
+          onClick={() => {
+            setFold(true)
+            const params = new URLSearchParams();
+            params.set("route", "files");
+            setsearchParams(params, {
+              preventScrollReset: true,
+            });
+          }}
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "files" ? "bg-slate-200" : null }`} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
