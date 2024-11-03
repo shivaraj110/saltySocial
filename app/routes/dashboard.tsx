@@ -50,10 +50,10 @@ export default function () {
     <div>
       <div className="h-10 w-full border-b">navbar</div>
       <div className="flex flex-row">
-        <div className="w-fit">
+        <div className="w-fit bg-white/20 rounded-xl backdrop-blur-sm">
           <Sidebar />
         </div>
-        <div className="flex flex-row w-fit bg-slate-50">
+        <div className="flex flex-row w-fit">
           <div className="grid grid-cols-4 w-fit">
             <div className="flex flex-col col-span-3">
               {" "}

@@ -8,10 +8,10 @@ export default function () {
   
   const [fold,setFold] = useState(true)
   return (
-    <div className={`  ${fold ? "w-[75px] ": "w-[215px] "}  transi text-sm`} >
+    <div className={`  ${fold ? "w-[75px] ": "w-[215px] "}  transi text-sm `} >
       <div className={` ${fold ? "hidden" : "flex"} pt-6 pr-3 text-gray-600 font-light cursor-pointer justify-end`}
       onClick={
-        ()=>{
+        ()=>{ 
           setFold(true)
         }
       }>
@@ -29,7 +29,7 @@ export default function () {
 </svg>
 
       </div>
-  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 rounded-lg `}
+  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-white/35" : null } hover:bg-white/35 mx-3 rounded-lg `}
       onClick={() => {
         setFold(true)
         const params = new URLSearchParams();
@@ -54,7 +54,7 @@ export default function () {
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Feed</div>
       </div>{" "}
     
-      <div className= {`hover:bg-slate-100 rounded-lg ${currRoute == "friends" ? "bg-slate-200" : null}`} >
+      <div className= {`hover:bg-white/25 rounded-lg mx-3 ${currRoute == "friends" ? "bg-white/35" : null}`} >
 
       </div>
       <div 
@@ -66,7 +66,7 @@ export default function () {
         preventScrollReset: true,
       });
     }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "friends" ?  "rounded-lg bg-slate-200" : null } `} >
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-white/25 rounded-lg mx-3 ${ currRoute == "friends" ?  "rounded-lg bg-white/35 mx-3" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -83,7 +83,7 @@ export default function () {
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Friends</div>
       </div>{" "}
-      <div className=" hover:bg-slate-100 rounded-lg ">
+      <div className=" hover:bg-white/25 rounded-lg mx-3 ">
 
       </div>
       <div 
@@ -95,7 +95,7 @@ export default function () {
           preventScrollReset: true,
         });
       }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "events" ?  "rounded-lg bg-slate-200" : null } `} 
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-white/25 rounded-lg mx-3 ${ currRoute == "events" ?  "rounded-lg bg-white/35 mx-3" : null } `} 
       >
       <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ export default function () {
               preventScrollReset: true,
             });
           }}
-        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "videos" ?  " rounded-lg bg-slate-200" : null } `} >
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-white/25 rounded-lg mx-3 ${ currRoute == "videos" ?  " rounded-lg bg-white/35 mx-3" : null } `} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -138,7 +138,7 @@ export default function () {
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Watch Videos</div>
       </div>{" "}
-      <div className=" hover:bg-slate-100 rounded-lg ">
+      <div className=" hover:bg-white/25 rounded-lg mx-3 ">
 
       </div>
       <div 
@@ -150,7 +150,7 @@ export default function () {
             preventScrollReset: true,
           });
         }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "photos" ?  "rounded-lg bg-slate-200" : null } `} >
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-white/25 rounded-lg mx-3 ${ currRoute == "photos" ?  "rounded-lg bg-white/35 mx-3" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -166,7 +166,7 @@ export default function () {
         </svg>
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Photos</div>      </div>{" "}
-        <div className=" hover:bg-slate-100 rounded-lg ">
+        <div className=" hover:bg-white/25 rounded-lg mx-3 ">
 
         </div>
         <div 
@@ -178,7 +178,7 @@ export default function () {
               preventScrollReset: true,
             });
           }}
-        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "files" ? " rounded-lg bg-slate-200" : null }`} >
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-white/25 rounded-lg mx-3 ${ currRoute == "files" ? " rounded-lg bg-white/35 mx-3" : null }`} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
