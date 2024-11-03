@@ -7,11 +7,11 @@ interface postProps {
 }
 export default function (props: postProps) {
   return (
-    <div className="h-[375px] bg-white/30 backdrop-blur-sm min-w-[500px] max-w-[500px] px-3 py-3 shadow-lg rounded-3xl">
+    <div className="h-[375px] bg-white/30 backdrop-blur-sm min-w-[500px] max-w-[500px] px-3 py-3 hover:-translate-y-2 transi shadow-lg rounded-3xl">
       <div className="flex flex-col justify-center">
         <img
           className="h-[200px] rounded-2xl bg-slate-400 text-center"
-          src="https://utfs.io/f/FY8OMBAlLeCoPhnRPVvCNB4x5p9EhcSywkz2VAujIgGXZK1F"
+          src="https://utfs.io/f/FY8OMBAlLeCoPElI1MvCNB4x5p9EhcSywkz2VAujIgGXZK1F"
           alt="post image"
         />
       </div>
