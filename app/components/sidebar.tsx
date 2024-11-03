@@ -29,7 +29,7 @@ export default function () {
 </svg>
 
       </div>
-  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 `}
+  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 rounded-lg `}
       onClick={() => {
         setFold(true)
         const params = new URLSearchParams();
@@ -54,7 +54,7 @@ export default function () {
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Feed</div>
       </div>{" "}
     
-      <div className= {`hover:bg-slate-100 ${currRoute == "friends" ? "bg-slate-200" : null}`} >
+      <div className= {`hover:bg-slate-100 rounded-lg ${currRoute == "friends" ? "bg-slate-200" : null}`} >
 
       </div>
       <div 
@@ -66,7 +66,7 @@ export default function () {
         preventScrollReset: true,
       });
     }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "friends" ? "bg-slate-200" : null } `} >
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "friends" ?  "rounded-lg bg-slate-200" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -83,7 +83,7 @@ export default function () {
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Friends</div>
       </div>{" "}
-      <div className=" hover:bg-slate-100 ">
+      <div className=" hover:bg-slate-100 rounded-lg ">
 
       </div>
       <div 
@@ -95,7 +95,7 @@ export default function () {
           preventScrollReset: true,
         });
       }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "events" ? "bg-slate-200" : null } `} 
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "events" ?  "rounded-lg bg-slate-200" : null } `} 
       >
       <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ export default function () {
               preventScrollReset: true,
             });
           }}
-        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "videos" ? "bg-slate-200" : null } `} >
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "videos" ?  " rounded-lg bg-slate-200" : null } `} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -138,7 +138,7 @@ export default function () {
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Watch Videos</div>
       </div>{" "}
-      <div className=" hover:bg-slate-100 ">
+      <div className=" hover:bg-slate-100 rounded-lg ">
 
       </div>
       <div 
@@ -150,7 +150,7 @@ export default function () {
             preventScrollReset: true,
           });
         }}
-      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "photos" ? "bg-slate-200" : null } `} >
+      className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "photos" ?  "rounded-lg bg-slate-200" : null } `} >
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -166,7 +166,7 @@ export default function () {
         </svg>
 
         <div className={` ${fold ? "hidden":"flex"} translate-y-[2px] font-semibold pl-3`} >Photos</div>      </div>{" "}
-        <div className=" hover:bg-slate-100 ">
+        <div className=" hover:bg-slate-100 rounded-lg ">
 
         </div>
         <div 
@@ -178,7 +178,7 @@ export default function () {
               preventScrollReset: true,
             });
           }}
-        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 ${ currRoute == "files" ? "bg-slate-200" : null }`} >
+        className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 rounded-lg ${ currRoute == "files" ? " rounded-lg bg-slate-200" : null }`} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
