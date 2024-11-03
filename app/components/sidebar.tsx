@@ -1,6 +1,10 @@
+import { useParams, useSearchParams } from "@remix-run/react";
 import { useState } from "react";
 
 export default function () {
+  const [params,setParams] = useSearchParams()
+  const currRoute = params.get("route")
+  
   const [fold,setFold] = useState(true)
   return (
     <div className={`  ${fold ? "w-[75px] ": "w-[215px] "}  transi text-sm`} >
@@ -13,7 +17,6 @@ export default function () {
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" text-gray-500 size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
 </svg>
-
       </div>
       <div className={` ${fold ? "flex":"hidden"} justify-center cursor-pointer  pt-6 gap-[2px] pb-[14px] mx-auto flex-row`}
       onClick={()=>{
@@ -25,7 +28,7 @@ export default function () {
 </svg>
 
       </div>
-  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} hover:bg-slate-100 `} >
+  <div className={`text-gray-500 flex cursor-pointer py-[10px] ${fold ? "justify-center" : " pl-6 justify-start"} ${currRoute == "feed" ? "bg-slate-200" : null } hover:bg-slate-100 `} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
