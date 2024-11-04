@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.transi{
-    transition: 75ms;
+.transi {
+  transition: 300ms;
 }

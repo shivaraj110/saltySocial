@@ -7,7 +7,10 @@ interface postProps {
 }
 export default function (props: postProps) {
   return (
-    <div className="h-[375px] bg-white/30 backdrop-blur-sm min-w-[500px] max-w-[500px] px-3 py-3 hover:-translate-y-2 transi shadow-lg rounded-3xl">
+    <div
+      className="h-[375px] bg-white/30 backdrop-blur-sm min-w-[500px] max-w-[500px] lg:min-w-[430px]
+lg:max-w-[430px] sm:min-w-[430px]
+sm:max-w-[430px] px-3 py-3 hover:-translate-y-2 transi shadow-lg rounded-3xl">
       <div className="flex flex-col justify-center">
         <img
           className="h-[200px] rounded-2xl bg-slate-400 text-center"
