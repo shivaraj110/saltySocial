@@ -5,3 +5,7 @@
 .transi {
   transition: 300ms;
 }
+
+.story-trans {
+  transition: 500ms;
+}

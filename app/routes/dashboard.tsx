@@ -65,6 +65,9 @@ export default function () {
                 <StoryComponent />
                 <StoryComponent />
                 <StoryComponent />
+                <StoryComponent />
+                <StoryComponent />
+                <StoryComponent />
               </div>
             </div>
             <div className="mt-5 px-5 flex col-span-4 font-semibold">
