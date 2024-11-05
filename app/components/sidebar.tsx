@@ -101,7 +101,7 @@ export default function () {
         className={`text-gray-600 flex cursor-pointer py-[10px] ${
           fold ? "justify-center" : " pl-6 justify-start"
         } hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "friends" ? "rounded-lg bg-white/35 mx-3" : null
+          currRoute == "friends" ? "rounded-lg bg-white/30 mx-3" : null
         } `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ export default function () {
         className={`text-gray-600 flex cursor-pointer py-[10px] ${
           fold ? "justify-center" : " pl-6 justify-start"
         } hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "events" ? "rounded-lg bg-white/35 mx-3" : null
+          currRoute == "events" ? "rounded-lg bg-white/30 mx-3" : null
         } `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ export default function () {
         className={`text-gray-600 flex cursor-pointer py-[10px] ${
           fold ? "justify-center" : " pl-6 justify-start"
         } hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "videos" ? " rounded-lg bg-white/35 mx-3" : null
+          currRoute == "videos" ? " rounded-lg bg-white/30 mx-3" : null
         } `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@ export default function () {
         className={`text-gray-600 flex cursor-pointer py-[10px] ${
           fold ? "justify-center" : " pl-6 justify-start"
         } hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "photos" ? "rounded-lg bg-white/35 mx-3" : null
+          currRoute == "photos" ? "rounded-lg bg-white/30 mx-3" : null
         } `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +242,7 @@ export default function () {
         className={`text-gray-600 flex cursor-pointer py-[10px] ${
           fold ? "justify-center" : " pl-6 justify-start"
         } hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "files" ? " rounded-lg bg-white/35 mx-3" : null
+          currRoute == "files" ? " rounded-lg bg-white/30 mx-3" : null
         }`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

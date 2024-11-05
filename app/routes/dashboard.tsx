@@ -1,4 +1,5 @@
 import React from "react";
+import FriendsTab from "~/components/FriendsTab";
 import PostCard from "~/components/postCard";
 import Sidebar from "~/components/sidebar";
 import StoryComponent from "~/components/storyComponent";
@@ -43,19 +44,37 @@ const posts: postProps[] = [
     caption:
       "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
   },
+  {
+    username: "Edward Newgate",
+    likes: 69,
+    comments: 100,
+    tags: ["asdaasd", "adsads"],
+    caption:
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
+  },
+  {
+    username: "Edward Newgate",
+    likes: 69,
+    comments: 100,
+    tags: ["asdaasd", "adsads"],
+    caption:
+      "this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool caption this is cool captionthis is cool caption this is cool captionthis is cool caption this is cool caption.",
+  },
 ];
 
 export default function () {
   return (
-    <div>
-      <div className="h-10 w-full border-b ml-20">navbar</div>
-      <div className="flex flex-row">
-        <div className="w-fit bg-white/35 rounded-xl fixed top-0 z-20 left-0 h-screen overflow-y-auto backdrop-blur-md">
+    <div className="overflow-hidden">
+      <div className="h-16 text-center  w-full border-b fixed right-0 top-0 z-50 bg-white/30 backdrop-blur-lg ">
+        navbar
+      </div>
+      <div className="flex flex-row mt-24">
+        <div className="w-fit bg-white/35 rounded-r-[10px] fixed top-0 z-20 left-0 h-screen mt-16 overflow-y-auto backdrop-blur-md">
           <Sidebar />
         </div>
         <div className="flex flex-row w-fit ml-20">
           <div className="grid grid-cols-4 w-fit">
-            <div className="flex flex-col col-span-3">
+            <div className="flex flex-col col-span-4">
               {" "}
               <div className="font-semibold p-5 text-sm">Stories</div>
               <div className="flex gap-4 px-5 col-span-3">
@@ -74,9 +93,9 @@ export default function () {
               Recent Posts
             </div>
             <div className="col-span-3 flex flex-row px-2">
-              <div className=" 2xl:grid 2xl:grid-cols-6 lg:grid lg:grid-cols-2 flex flex-col p-3 gap-4 mt-2  mb-10 h-fit">
+              <div className=" 2xl:grid 2xl:grid-cols-6 lg:grid lg:grid-cols-2 flex flex-col p-3 gap-4 mt-2 h-fit">
                 {posts.map((p) => (
-                  <div className=" 2xl:col-span-3 cursor-pointer">
+                  <div className=" 2xl:col-span-2 cursor-pointer">
                     <PostCard
                       username={p.username}
                       likes={p.likes}
@@ -87,6 +106,9 @@ export default function () {
                   </div>
                 ))}
               </div>{" "}
+            </div>
+            <div className="flex justify-items-end">
+              <FriendsTab />
             </div>
           </div>
         </div>
