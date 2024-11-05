@@ -87,7 +87,7 @@ export default function () {
       </div>{" "}
       <div
         className={`hover:bg-white/25 rounded-lg mx-3 ${
-          currRoute == "friends" ? "bg-white/35" : null
+          currRoute == "friends" ? "bg-white/30" : null
         }`}></div>
       <div
         onClick={() => {

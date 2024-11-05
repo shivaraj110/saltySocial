@@ -76,7 +76,7 @@ export default function () {
           <div className="grid grid-cols-4 w-fit">
             <div className="flex flex-col col-span-4">
               {" "}
-              <div className="font-semibold p-5 text-sm">Stories</div>
+              <div className="font-semibold p-5 ">Stories</div>
               <div className="flex gap-4 px-5 col-span-3">
                 <StoryComponent />
                 <StoryComponent />
@@ -89,8 +89,15 @@ export default function () {
                 <StoryComponent />
               </div>
             </div>
-            <div className="mt-5 px-5 flex col-span-4 font-semibold">
-              Recent Posts
+            <div className="mt-10 px-5 col-span-4 flex w-[900px] 2xl:w-[1350px] justify-between gap-5 font-semibold">
+              <div>Recent Posts</div>
+              <div className="flex gap-10">
+                <div className="cursor-pointer">Feeds</div>
+                <div className="text-gray-500 cursor-pointer">All</div>
+                <div className="text-gray-500 cursor-pointer">Following</div>
+                <div className="text-gray-500 cursor-pointer">Latest</div>
+                <div className="text-gray-500 cursor-pointer">Popular</div>
+              </div>
             </div>
             <div className="col-span-3 flex flex-row px-2">
               <div className=" 2xl:grid 2xl:grid-cols-6 lg:grid lg:grid-cols-2 flex flex-col p-3 gap-4 mt-2 h-fit">
@@ -108,44 +115,45 @@ export default function () {
               </div>{" "}
             </div>
             <div className=" bg-white/25 backdrop-blur-md fixed left-0 right-0 ml-auto w-[280px] mt-16 rounded-l-[10px] 2xl:w-[450px] top-0 overflow-y-auto h-screen">
+              <div className="pt-5 pl-10 font-semibold">Friends</div>
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="online"
               />{" "}
               <FriendsTab
-                username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
-                lastSeen="online"
+                username="J Cole"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
+                lastSeen="typing..."
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="15 secs"
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="online"
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="69 years"
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="9 months"
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="2 years"
               />{" "}
               <FriendsTab
                 username="asdasd"
-                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
                 lastSeen="5 mins"
               />
             </div>
