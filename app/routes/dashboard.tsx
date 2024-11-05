@@ -65,11 +65,11 @@ const posts: postProps[] = [
 export default function () {
   return (
     <div className="overflow-hidden">
-      <div className="h-16 text-center  w-full border-b fixed right-0 top-0 z-50 bg-white/30 backdrop-blur-lg ">
+      <div className="h-14 text-center  w-full border-b fixed right-0 top-0 z-50 bg-white/30 backdrop-blur-lg ">
         navbar
       </div>
       <div className="flex flex-row mt-24">
-        <div className="w-fit bg-white/35 rounded-r-[10px] fixed top-0 z-20 left-0 h-screen mt-16 overflow-y-auto backdrop-blur-md">
+        <div className="w-fit bg-white/35 rounded-r-[10px] fixed top-0 z-20 left-0 h-screen mt-14 overflow-y-auto backdrop-blur-md">
           <Sidebar />
         </div>
         <div className="flex flex-row w-fit ml-20">
@@ -114,7 +114,7 @@ export default function () {
                 ))}
               </div>{" "}
             </div>
-            <div className=" bg-white/25 backdrop-blur-md fixed left-0 right-0 ml-auto w-[280px] mt-16 rounded-l-[10px] 2xl:w-[450px] top-0 overflow-y-auto h-screen">
+            <div className=" bg-white/25 backdrop-blur-md -translate-y-1/2 2xl:-translate-y-[315px] 2xl:translate-x-10 left-0 right-0 ml-auto w-[280px] mt-[70px] rounded-l-[10px] 2xl:w-[450px] top-0 overflow-scroll h-lvh">
               <div className="pt-5 pl-10 font-semibold">Friends</div>
               <FriendsTab
                 username="asdasd"
@@ -139,17 +139,17 @@ export default function () {
               <FriendsTab
                 username="asdasd"
                 imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
-                lastSeen="69 years"
+                lastSeen="69 yrs"
               />{" "}
               <FriendsTab
                 username="asdasd"
                 imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
-                lastSeen="9 months"
+                lastSeen="97 weeks"
               />{" "}
               <FriendsTab
                 username="asdasd"
                 imgUrl="https://utfs.io/f/FY8OMBAlLeCo9ZQ0hJCyICJ6jp8FQSe1OxiEL2znot4XvkVr"
-                lastSeen="2 years"
+                lastSeen="3 hrs"
               />{" "}
               <FriendsTab
                 username="asdasd"
