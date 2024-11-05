@@ -107,8 +107,47 @@ export default function () {
                 ))}
               </div>{" "}
             </div>
-            <div className="flex justify-items-end">
-              <FriendsTab />
+            <div className=" bg-white/25 backdrop-blur-md fixed left-0 right-0 ml-auto w-[280px] mt-16 rounded-l-[10px] 2xl:w-[450px] top-0 overflow-y-auto h-screen">
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="online"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="online"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="15 secs"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="online"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="69 years"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="9 months"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="2 years"
+              />{" "}
+              <FriendsTab
+                username="asdasd"
+                imgUrl="https://utfs.io/f/FY8OMBAlLeCo72C01wX8XBUzh3gQnvmulI7EJ2H6NDTMrOxK"
+                lastSeen="5 mins"
+              />
             </div>
           </div>
         </div>
