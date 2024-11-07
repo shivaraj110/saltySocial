@@ -6,7 +6,7 @@ interface Friends {
 
 export default function (props: Friends) {
   return (
-    <div className="mx-5 2xl:mx-10 mt-5 2xl:mt-5 cursor-pointer flex justify-between">
+    <div className=" mt-5 2xl:mt-5 cursor-pointer flex justify-between">
       <div className=" h-fit w-[350px] p-1 bg-white/15 rounded-full flex  justify-between">
         <img
           src={props.imgUrl}

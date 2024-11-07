@@ -66,12 +66,12 @@ sm:max-w-[430px] px-3 py-3 hover:-translate-y-2 transi shadow-lg rounded-3xl">
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-2 text-gray-600 px-3 mt-5">
+      <div className="flex flex-row gap-2 text-gray-600 ml-60 ">
         {props.tags.map((t) => (
           <div>{"#" + t}</div>
         ))}
       </div>
-      <div className="text-sm px-3">{props.caption.slice(0, 150) + "..."}</div>
+      <div className="text-sm">{props.caption.slice(0, 150) + "..."}</div>
     </div>
   );
 }
